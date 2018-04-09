@@ -1,0 +1,24 @@
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            Please enter your phonenumber.
+        </div>
+        <div class="col-md-6">
+            {{prefix}}
+            <select [(ngModel)]="digit1" (change)="numberSelected()">
+                <option *ngFor="let d of digitsTripple" [ngValue]="d">{{d}}</option>
+            </select>
+            <select [(ngModel)]="digit2" (change)="numberSelected()">
+                <option *ngFor="let d of digitsTripple" [ngValue]="d">{{d}}</option>
+            </select>
+            <select [(ngModel)]="digit3" (change)="numberSelected()">
+                <option *ngFor="let d of digitsDouble" [ngValue]="d">{{d}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">        
+        <div class="col-md-6">
+            Your phonenumber is {{phoneNumber}}.
+        </div>
+    </div>
+</div>

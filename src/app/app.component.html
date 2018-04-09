@@ -1,0 +1,18 @@
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/generators">Phone input</a>
+    <a routerLink="/dropdownform">Dropdown</a>
+</nav>
+<hr/>
+<router-outlet></router-outlet>
+
+<modal #customModal id="dashboardModal">
+
+<div class="modal">
+    <div class="modal-body">
+        <h1 style="height:500px">This modal lives inside the app.component.html!</h1>
+        <button (click)="customModal.close();">Close</button>
+    </div>
+</div>
+<div class="modal-background"></div>
+</modal>

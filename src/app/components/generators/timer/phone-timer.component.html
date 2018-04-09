@@ -1,0 +1,11 @@
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            <span>{{phoneNumber}}</span><span *ngIf="isRunning">{{nextNumber}}</span>
+        </div>
+        <div class="col-md-6">
+            <button (click)="clickReset()">Reset</button>
+            <button (click)="clickSet()">Set</button>
+        </div>
+    </div>
+</div>

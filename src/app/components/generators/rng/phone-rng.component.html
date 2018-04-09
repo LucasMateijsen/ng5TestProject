@@ -1,0 +1,13 @@
+<div class="col-md-12">
+    <span *ngIf="phoneNumberCorrect == false">
+        Is {{generatedNumber}} your phone number?
+    </span>
+    <span *ngIf="phoneNumberCorrect">
+        {{generatedNumber}} is your phone number!
+    </span>
+
+    <div class="row">
+            <button (click)="clickedYes()">Yes</button>
+            <button (click)="clickedNo()">No</button>
+    </div>
+</div>
